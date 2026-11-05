@@ -1,16 +1,70 @@
-# React + Vite
+# Aplicación de Testimonios (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Práctica inicial de React · Ingeniería de Software · Unidad 3 · TECNM Celaya · AGO–DIC 2026
 
-Currently, two official plugins are available:
+## Integrantes
+- Sebastian (22030253@itcelaya.edu.mx)
+- Pamela
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Etapa terminada
+Etapa básica (navegación manual). Autoplay: pendiente.
 
-## React Compiler
+## Instalación y ejecución
+~~~bash
+npm install
+npm run dev        # desarrollo en http://localhost:5173
+npm run build      # genera dist
+npm run preview    # revisa la compilación localmente
+~~~
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Estructura
+~~~
+src/
+  components/
+    Testimonial.jsx   # presenta un registro (props: item)
+    Controls.jsx      # botones; comunica acciones por callbacks
+  App.jsx             # conserva el índice (useState) y la navegación
+  main.jsx            # monta App en #root
+  data.js             # arreglo de testimonios (datos ficticios)
+  styles.css          # estilos
+~~~
 
-## Expanding the Oxlint configuration
+## Decisiones principales
+- App conserva el estado `index`; Testimonial solo presenta; Controls solo avisa.
+- Navegación circular con el operador `%`.
+- Aleatorio usa un salto entre 1 y total-1 para no repetir el actual.
+- Con 0 registros se muestra un mensaje; con 1 la interfaz sigue funcionando.
+- Fotos desde URLs remotas ficticias (pravatar); dependen de conexión.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Trabajo en pareja (Driver / Navigator)
+| Misión | Driver | Navigator |
+|--------|--------|-----------|
+| 1. Proyecto base | Sebastian | Pamela |
+| 2. Datos | Pamela | Sebastian |
+| 3. Testimonial | Sebastian | Pamela |
+| 4. Montaje y estilos | Pamela | Sebastian |
+| 5. Controles y navegación | Sebastian | Pamela |
+| 6. Registro de pruebas | Pamela | Sebastian |
+| 7. Ampliación de datos | Sebastian | Pamela |
+| 8. README | Pamela | Sebastian |
+
+Los cambios de rol también quedan en el historial de commits.
+
+## Tablero Scrum
+Columnas: Pendiente, En proceso, En revisión, Terminado.
+Tareas: entorno, datos, tarjeta, navegación, estilos, verificación.
+Enlace o captura del tablero: (pendiente)
+
+## Revisión por otra pareja
+Pareja revisora: (pendiente)
+Observaciones y correcciones: (pendiente)
+
+## Pruebas
+Ver [PRUEBAS.md](PRUEBAS.md).
+
+## Capturas
+Anchos de 320, 768 y 1280 px en la carpeta `capturas/`.
+
+## Versiones utilizadas
+- Node: v26.9.0
+- npm: 12.0.2
