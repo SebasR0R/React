@@ -62,22 +62,16 @@ El avance cada 5 segundos se implementa con `useEffect`, porque el temporizador 
 
 Los cambios de rol también quedan en el historial de commits.
 
-## Tablero Scrum
-Columnas: Pendiente, En proceso, En revisión, Terminado.
-Tareas: entorno, datos, tarjeta, navegación, estilos, verificación.
-Captura: `capturas/tablero-scrum.png` (ENLACE AL TABLERO)
-
-## Revisión por otra pareja
-Pareja revisora: (NOMBRES)
-Fecha: (FECHA)
-Observaciones: (QUÉ DIJERON)
-Correcciones realizadas: (QUÉ CAMBIARON)
-
 ## Pruebas
 Ver [PRUEBAS.md](PRUEBAS.md).
 
 ## Capturas
-Anchos de 320, 768 y 1280 px en la carpeta `capturas/`.
+### Móvil (320 px)
+![Vista a 320 px](capturas/320.png)
+### Escritorio (1280 px)
+![Vista a 1280 px](capturas/1280.png)
+### Entorno de desarrollo
+![Servidor de desarrollo](capturas/entorno.png)
 
 ## Reflexión: reutilización y productividad
 - **Qué reutilicé:** el componente `Testimonial` se usa para los 8 registros; cambiar su estilo o estructura se hace en un solo lugar (`Testimonial.jsx` y `.testimonial-card`) en vez de repetir HTML ocho veces.
