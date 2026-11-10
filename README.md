@@ -4,7 +4,7 @@ Práctica inicial de React · Ingeniería de Software · Unidad 3 · TECNM Celay
 
 ## Integrantes
 - Sebastian (22030253@itcelaya.edu.mx)
-- Pamela (APELLIDO / CORREO)
+- Pamela (dulcesomnia0708@gmail.com)
 
 ## Etapa terminada
 Etapa básica completa (P01 a P10) **y** ampliación de reproducción automática (A01 a A07). Todo está integrado en la rama `main`.
